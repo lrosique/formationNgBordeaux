@@ -1,0 +1,5 @@
+<nav layout="column">
+  <md-button ng-repeat="menuItem in vm.menuItems track by menuItem.name" ui-sref="{{ ::menuItem.state }}">
+    {{ ::menuItem.name }}
+  </md-button>
+</nav>

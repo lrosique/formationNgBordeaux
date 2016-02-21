@@ -1,0 +1,16 @@
+<md-toolbar class="md-hue-1">
+  <div class="md-toolbar-tools">
+    Login
+  </div>
+</md-toolbar>
+<md-content layout="column" layout-padding>
+  <form ng-submit="vm.login(vm.user)">
+    <formly-form model="vm.user" fields="vm.loginForm"></formly-form>
+    <md-button class="md-raised" type="submit">
+      Login
+    </md-button>
+    <md-button ui-sref="signup" style="width:100%" class="md-raised">
+      not a member ?
+    </md-button>
+  </form>
+</md-content>

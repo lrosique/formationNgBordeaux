@@ -1,0 +1,21 @@
+<main layout="row" layout-fill>
+  <md-sidenav layout="column" layout-fill
+              class="md-sidenav-left md-whiteframe-z2"
+              md-component-id="menu"
+              md-is-locked-open="$mdMedia('gt-sm')">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span>Menu</span>
+      </div>
+    </md-toolbar>
+    <md-content>
+      <af-menu></af-menu>
+    </md-content>
+  </md-sidenav>
+  <section layout="column" flex>
+    <md-toolbar>
+      <af-toolbar></af-toolbar>
+    </md-toolbar>
+    <md-content ui-view="content" flex></md-content>
+  </section>
+</main>

@@ -1,0 +1,16 @@
+<md-toolbar class="md-hue-1">
+  <div class="md-toolbar-tools">
+    Account création
+  </div>
+</md-toolbar>
+<md-content layout="column" layout-padding>
+  <form ng-submit="vm.signup(vm.user)">
+    <formly-form model="vm.user" fields="vm.signupForm"></formly-form>
+    <md-button class="md-raised" type="submit">
+      signup
+    </md-button>
+    <md-button ui-sref="login" style="width:100%" class="md-raised">
+      already a member ?
+    </md-button>
+  </form>
+</md-content>
